@@ -1,0 +1,41 @@
+<!--?xml version="1.0" encoding="utf-8"?-->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/settings_title">
+
+    <PreferenceCategory
+        android:title="@string/pref_cat_sqlite_db"
+        android:key="pref_key_storage_settings">
+
+        <Preference
+            android:title="Select SQLite DB"
+            android:summary="Select SQLite dictionary database containing word lists as tables. A row of a table contains a word, an image aiding to memorize that word, its synonym, antonym, part of speech and usage in a well-formed English sentence"
+            android:key="@string/pref_filechooser" />
+        <Preference
+            android:title="SQLite DB Path"
+            android:summary=" --- Not set --- "
+            android:key="@string/pref_dbpath" />
+    </PreferenceCategory>
+
+    <EditTextPreference
+        android:title="Your Name"
+        android:summary="Please provide your username"
+        android:key="username"
+        android:enabled="false"/>
+    <CheckBoxPreference
+        android:title="Show splash screen"
+        android:summary="This option, if selected, will show a splash screen during application startup"
+        android:key="showSplashScreen"
+        android:defaultValue="false"
+        android:enabled="false" />
+    <ListPreference
+        android:title="Study Mode"
+        android:summary="Select mode of study you prefer to learn in"
+        android:key="studyMode"
+        android:defaultValue="1"
+        android:entries="@array/listArray"
+        android:entryValues="@array/listValues"
+        android:enabled="false" />
+
+</PreferenceScreen>

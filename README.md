@@ -1,0 +1,2 @@
+# FlexDict
+A flexible dictionary

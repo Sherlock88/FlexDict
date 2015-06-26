@@ -1,0 +1,160 @@
+<!-- http://stackoverflow.com/questions/15094928/scrollview-layout-does-not-fill-the-whole-screen -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview_show_list"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#585858"
+    android:padding="2dp"
+    android:gravity="top">
+
+    <TextView
+        android:id="@+id/txtWord"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="#c1e1a6"
+        android:background="#ff065220"
+        android:gravity="center"
+        android:textSize="25sp" />
+
+    <!-- http://stackoverflow.com/questions/5049852/android-drawing-separator-divider-line-in-layout -->
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_orange_dark"/>
+
+    <ImageView
+        android:id="@+id/imgVisual"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_orange_dark"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Definition"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="#ff5d182e"
+        android:textColor="#ffe9659e"/>
+
+    <TextView
+        android:id="@+id/txtDefinition"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#6dbdd6"
+        android:background="#ff141544"
+        android:layout_alignParentTop="true"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_orange_dark"/>
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Parts of Speech"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="#ff5d182e"
+        android:textColor="#ffe9659e"/>
+
+    <TextView
+        android:id="@+id/txtPartsOfSpeech"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="#6dbdd6"
+        android:background="#ff141544"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_orange_dark"/>
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Usage"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="#ff5d182e"
+        android:textColor="#ffe9659e"/>
+
+    <TextView
+        android:id="@+id/txtUsage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="#6dbdd6"
+        android:background="#ff141544"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_orange_dark"/>
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Synonym"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="#ff5d182e"
+        android:textColor="#ffe9659e"/>
+
+    <TextView
+        android:id="@+id/txtSynonym"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="#6dbdd6"
+        android:background="#ff141544"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_orange_dark"/>
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Antonym"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="#ff5d182e"
+        android:textColor="#ffe9659e"/>
+
+    <TextView
+        android:id="@+id/txtAntonym"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="#6dbdd6"
+        android:background="#ff141544"
+        android:textSize="18sp" />
+
+</LinearLayout>
+
+</ScrollView>
